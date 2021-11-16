@@ -9,6 +9,7 @@ export const CardShadow = styled(motion.div)`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 20;
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -34,7 +35,12 @@ export const Detail = styled(motion.div)`
 export const Stats = styled(motion.div)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  img {
+    width: 2rem;
+    height: 2rem;
+    display: inline;
+  }
 `;
 export const Info = styled(motion.div)`
   text-align: center;
@@ -43,7 +49,7 @@ export const Platforms = styled(motion.div)`
   display: flex;
   justify-content: space-evenly;
   img {
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 `;
 export const Media = styled(motion.div)`
